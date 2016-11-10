@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--<link href="css/gongy.css" type="text/css" rel="stylesheet" />-->
+    <link href="css/news.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script src="js/style.js"></script>
+
+</head>
+
+<body>
+<!--头部-->
+<div class="t-yan"></div>
+<div class="barder">
+    <div class="barder-l">
+        <a href="index.html"><img src="images/logo1.png" /></a>
+    </div>
+    <div class="barder-c">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="cp.html">产品中心</a></li>
+            <li><a href="lxwm.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<!--banna-->
+<!--<div class="banla"> <img src="images/bannr_09.jpg" /></div>-->
+<div class="wrapper">
+
+    <ul id="sb-slider" class="sb-slider">
+        <li>
+            <a href="http://metersbonwe.banggo.com/" target="_blank"><img src="images/bannr_09.jpg" alt="image1"/></a>
+            <div class="sb-description">
+                <h3>商城热卖</h3>
+            </div>
+        </li>
+        <li>
+            <a href="http://metersbonwe.banggo.com/" target="_blank"><img src="images/banner-01.jpg" alt="image2"/></a>
+            <div class="sb-description">
+                <h3>动感地带</h3>
+            </div>
+        </li>
+        <li>
+            <a href="http://metersbonwe.banggo.com/" target="_blank"><img src="images/banner-02.jpg" alt="image1"/></a>
+            <div class="sb-description">
+                <h3>秋季上新</h3>
+            </div>
+        </li>
+        <li>
+            <a href="http://metersbonwe.banggo.com/" target="_blank"><img src="images/banner-03.jpg" alt="image1"/></a>
+            <div class="sb-description">
+                <h3>潮流前线</h3>
+            </div>
+        </li>
+    </ul>
+
+    <div id="shadow" class="shadow"></div>
+    <div id="nav-arrows" class="nav-arrows">
+        <a href="#">Next</a>
+        <a href="#">Previous</a>
+    </div>
+
+    <div id="nav-dots" class="nav-dots">
+        <span class="nav-dot-current"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</div><!-- /wrapper -->
+
+<!--内容-->
+<div class="main">
+    <div class="mainl">
+        <div class="mainl-s">
+            <ul>
+                <li> <a href="lxwm.html" class="bg">联系我们</a> </li>
+            </ul>
+        </div>
+        <div class="mainl-c">
+            <ul>
+                <li><a href="about.html">公司简介</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="cp.html">产品中心</a></li>
+                <li><a href="lxwm.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainr">
+        <div class="mainr-s">
+            <div class="mainr-sl"><img src="images/CONTACT.png" >
+                <p>联系我们
+                    <br /><span>CONTACT US</span></p>
+            </div>
+            <div class="mainr-sr">当前位置:<a href='index.html'>主页</a> > <a href='lxwm.html'>联系我们</a></a>
+            </div>
+        </div>
+        <div class="mainr-di">
+            <div style="width:938px;height:428px;border:#ccc solid 1px; overflow:auto;" id="dituContent"></div>
+            <!--action="/plus/diy.php" enctype="multipart/form-data" method="post"-->
+            <form >
+                <input type="hidden" name="action" value="post" >
+                <input type="hidden" name="diyid" value="2" >
+                <input type="hidden" name="do" value="2" >
+                <table>
+                    <tr>
+                        <td class="ge">留言标题：</td>
+                        <td>
+                            <input type="text" name='lybt' class="txt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ge">留言内容：</td>
+                        <td>
+                            <textarea cols="60" name='nr' rows="6" class="nei"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ge">联系邮箱：</td>
+                        <td>
+                            <input type="text" name='youxiang' class="txt" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ge">联系电话：</td>
+                        <td>
+                            <input type="text" name='dhhm' class="txt" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ge">联系人：</td>
+                        <td>
+                            <input type="text" name='lxr' class="txt" >
+                        </td>
+                    </tr>
+                    <input type="hidden" name="dede_fields" value="lybt,text;nr,multitext;youxiang,text;dhhm,text;lxr,text" >
+                    <input type="hidden" name="dede_fieldshash" value="cb0d6af98261f1bb9d3b90841e39b73a" >
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="submit" value="提交" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="kuan">客户服务热线</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="kuan dian">400-400-4000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="kuan"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="kuan">邮箱</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="kuan dian">www.metersbonwe.com</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="jie">
+    <div class="shu">
+        <p>咨询热线:　4000-4000-4000　 Copyright fzw.net <a href="javascript:;">版权所有</a></p>
+    </div>
+</div>
+<script src="js/map.js"></script>
+</body>
+
+</html>

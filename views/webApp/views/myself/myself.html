@@ -1,0 +1,75 @@
+<ion-view view-title="个人中心" id="myself">
+    <!--badge="5" badge-style="badge-assertive"-->
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="openModal()">
+            <i > 登录/注册</i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div id="touxiang">
+            <div><img src="images/touxiang.jpg" ></div>
+            <p>十年听雪楼，一朝忘川</p>
+        </div>
+        <div class="list">
+            <!--<div class="item item-thumbnail-left">-->
+                <!--<img src="images/01.jpg">-->
+                <!--<h2>十指苔生</h2>-->
+                <!--<p>小志爱星宝<span class=" item-note arrow">></span></p>-->
+            <!--</div>-->
+            <div class="item item-icon-left"  ng-click="showAlert()">
+                <i class="icon ion-refresh positive"></i>
+                <p>修改个人资料<span class=" item-note arrow">></span></p>
+            </div>
+            <div class="item item-icon-left"  ng-click="showAlert()" >
+                <i class="icon ion-chatboxes positive"></i>
+                <p>我的消息<span class="badge badge-assertive" >5</span></p>
+            </div>
+            <div class="item item-icon-left "  ng-click="showAlert()">
+                <i class="icon ion-thumbsup positive"></i>
+                <p>专属推荐<span  class=" item-note arrow" >></span></p>
+            </div>
+            <div class="item item-icon-left "  ng-click="showAlert()">
+                <i class="icon ion-heart assertive"></i>
+                <p>我的收藏<span class=" item-note arrow">></span></p>
+            </div>
+            <div class="item item-icon-left "  ng-click="showAlert()">
+                <i class="icon ion-gear-b positive"></i>
+                <p>设置<span class=" item-note arrow" >></span></p>
+            </div>
+            <div class="item item-icon-left "  ng-click="showVersion()">
+                <i class="icon ion-android-warning positive"></i>
+                <p>关于<span class=" item-note arrow" >></span></p>
+            </div>
+            <div class="item item-icon-left "  ng-click="showAlert()">
+                <i class="icon ion-power assertive" ></i>
+                <p id="tuichu">退出账号</p>
+            </div>
+        </div>
+    </ion-content>
+
+    <!--内联模板-->
+    <script id="views/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-positive">
+                <h1 class="title">注册</h1>
+                <button class="button button-clear button-primary" ng-click="closeModal()">取消</button>
+            </ion-header-bar>
+
+            <ion-content class="padding">
+                <div class="list">
+                    <label class="item item-input">
+                        <!--<span class="input-label">姓名</span>-->
+                        <input type="text" ng-model="newUser.username" placeholder="请输入用户名">
+                    </label>
+
+                    <label class="item item-input">
+                        <!--<span class="input-label">邮箱</span>-->
+                        <input type="text" ng-model="newUser.email" placeholder="请输入密码">
+                    </label>
+                    <button class="button button-full button-positive"  ng-click="zhuce()" >确认注册</button>
+                </div>
+            </ion-content>
+        </ion-modal-view>
+    </script>
+
+</ion-view>

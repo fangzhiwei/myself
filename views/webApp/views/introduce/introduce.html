@@ -1,0 +1,39 @@
+<ion-view title="游记分享" id="intro">
+
+    <ion-content class="scroll-content overflow-scroll">
+        <div class="list card" ng-repeat="introduce in intro">
+            <div class="item item-avatar-left">
+                <img ng-src="{{introduce.headerimgsrc}}" >
+                <h2>{{introduce.name}}</h2>
+                <p>{{introduce.qianming}}</p>
+            </div>
+            <!--大图-->
+            <div class="item item-image">
+                <img ng-src="{{introduce.imgsrc}}">
+            </div>
+            <div class="item item-text-wrap">
+                <p>{{introduce.introduce}}</p>
+            </div>
+            <!--点赞区-->
+            <div class="item tabs tabs-icon-left">
+                <div class="tab-item" ng-click="zan(introduce)">
+                    <i class="icon ion-thumbsup assertive"></i>赞
+                    <span>{{introduce.zan}}</span>
+                </div>
+                <div class="tab-item" ng-click="cai(introduce)">
+                    <i class="icon ion-thumbsdown calm"></i>踩
+                    <span>{{introduce.cai}}</span>
+                </div>
+                <div class="tab-item">
+                    <i class="icon ion-chatbox energized"></i>评论
+                    <span>{{introduce.pinglun}}</span>
+                </div>
+                <div class="tab-item">
+                    <i class="icon ion-share bar-balanced"></i>分享
+                </div>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

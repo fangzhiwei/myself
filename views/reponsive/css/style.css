@@ -1,0 +1,70 @@
+@media screen and (max-width:1200px){
+    .inner{width:96%;}
+
+}
+
+
+
+@media screen and (max-width:800px){
+    /*消除所有title的margin-top值*/
+    #fzw .title>h2{margin-top: 20px;}
+
+    /*此时隐藏导航栏并显示导航按钮*/
+    .header .nav{display:none ;position:absolute;left:0;top:70px;}
+    #btn{display: block;float:right;}
+    /*取消横向导航的浮动，并给他做定位*/
+    .header .nav{background:#00c8ff;width: 100%;}
+    .header .nav ul{margin-left: 5%;}
+    .header .nav ul li{float:none;font:16px/50px "Microsoft YaHei";width: 100%;padding-left: 20px;}
+
+    /*section1取消浮动加样式*/
+    .section1 .content ul li{width:98%;padding:1.3%;float:none;margin-right: 0;margin-bottom: 20px;}
+    .section2 .content .left .img-cover{  width: 100%;height:100%;  }
+    .section2 .content .right ul li .img-cover{  width: 100%;height:99%;  }
+
+    /*section2取消浮动加样式*/
+    .section2 .content .left{float: none;width: 98%;margin-right: 0;position:relative;margin-bottom: 20px;}
+    .section2 .content .left img{width: 100%;}
+    .section2 .content .left .img-cover{  width: 100%; height:98%; }
+    .section2 .content .right{float: none;width: 98%}
+    .section2 .content .right li .img-cover{  width: 100%;  height:98%;  }
+
+    /*section3取消浮动加样式*/
+    .section3 .content .row ul li{float:none; margin-bottom: 20px; }
+    /*遮罩层*/
+    .section3 .content .row1 li .img-cover{  width: 100%;height:99%;}
+    .section3 .content .row ul .pic-left{width: 98%;}
+    .section3 .content .row ul .pic-right{width: 98%;}
+    /*下面四张*/
+    .section3 .content .row ul .pic {width: 98%;}
+    .section3 .content .row ul .pic .img-cover{  width: 100%;height:99%;  }
+
+    /*section4取消浮动加样式*/
+    .section4 .content ul li{
+        width: 98%;margin-right: 0;margin-bottom:50px;position:relative;float: none;text-align: center;
+    }
+    .section4 .content h4{padding-top:60px;}
+    .section4 .content p{padding-bottom:20px;}
+
+    .section5 .content ul li{width:98%;padding:1.3%;float:none;margin-right: 0;}
+
+}
+
+
+@media screen and (max-width:550px){
+    .footer .foot{padding-top:10px;}
+    .footer .foot ul li{float: none;width: 98%;height:auto;text-align: center;margin-bottom: 15px;}
+    .bot p{height:40px;line-height: 40px;}
+    /*隐藏轮播图按钮*/
+    .banner .pre, .banner .next{display: none}
+
+
+
+}
+
+
+
+
+
+
+

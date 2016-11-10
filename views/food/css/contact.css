@@ -1,0 +1,21 @@
+.banner{background: url("../images/1474436012.jpg")  no-repeat left top;height: 40vh;background-size: cover;}
+
+
+@media (min-width: 768px){
+    .content{margin-bottom: 0;}
+
+}
+
+@media (min-width: 992px){
+    .main .title h3{margin: 5vh 0;}
+    .content{margin-bottom: 15vh;}
+}
+
+.main .title{text-align: center;}
+.content img{width: 100%;}
+.content p{line-height: 30px;padding-left: 5px;}
+.content i{padding-right: 1vw;}
+
+.bot{margin-top: 10px;}
+
+

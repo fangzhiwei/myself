@@ -1,0 +1,17 @@
+*{margin:0;padding: 0;}
+.page{width: 100%;height:100%;position:absolute;overflow: hidden;}
+img{position: absolute;}
+.page-1-1{background: url(../img/page1_bg.png) no-repeat 0 0 ;background-size: cover;}
+.page-1-1 #page-1-img-1{width: 100%;left:0;top:4.6%;}
+.page-1-1 #page-1-img-2{width: 24%;left:25%;top:8%;}
+.hide{display: none;}
+.page-2-1{background: url(../img/page2_bg.png) no-repeat 0 0 ;background-size: cover;}
+.page-2-1 #page-2-img-1{width:23.4%;left:63%;top:6.9%;}
+.page-2-1 #page-2-img-2{width:24.3%;left:13%;top:10.4%;}
+.page-2-1 #page-2-img-3{width:23.6%;left:38.4%;top:14.1%;}
+.page-2-1 #page-2-img-4{width:75%;left:9.6%;top:64.5%;}
+.page-2-1 #page-2-img-5{width:5.3%;left:66%;top:76.6%;}
+.page-2-1 #page-2-img-6{width:5.3%;left:9.6%;top:60%;}
+.page-2-1 #page-2-img-7{width:16.3%;left:37.3%;top:63.6%;}
+.page-3-1{background: url(../img/1122.jpg) no-repeat 0 0 ;background-size: cover; }
+.page-4-1{background: url(../img/137.jpg) no-repeat 0 0 ;background-size: cover; }

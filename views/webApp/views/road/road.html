@@ -1,0 +1,62 @@
+<ion-view view-title="致远旅行社">
+    <ion-nav-buttons side="left">
+        <button class="button button-clear button-icon ion-navicon" menu-toggle></button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="chuang()">
+            <i class="icon ion-plus" ></i>
+        </button>
+    </ion-nav-buttons>
+    <!--轮播部分-->
+    <ion-content class="scroll-content" id="road">
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2500" show-pager="true" id="lunbo" >
+            <ion-slide>
+                <img src="images/01.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/02.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/03.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/04.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/05.jpg">
+            </ion-slide>
+        </ion-slide-box>
+        <!--列表部分-->
+        <ion-list  id="liebiao">
+            <ion-item ng-repeat="road in data.productList"
+                      class="item-thumbnail-left" ng-click="toDetail(road)">
+                <img ng-src="{{road.imgsrc}}">
+                <h2>{{road.title}}</h2>
+                <p>{{road.detail}}</p>
+                <span class="item-note " id="arrow">></span>
+            </ion-item>
+        </ion-list>
+        <div id="tanchuang" ng-show="visible">
+            <ion-list  >
+                <ion-item class="item-thumbnail-left meiyixiang" >
+                    <i class="icon ion-grid"></i>
+                    <span>添加好友</span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left meiyixiang" >
+                    <i class="icon ion-grid"></i>
+                    <span>扫一扫</span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left meiyixiang" >
+                    <i class="icon ion-grid"></i>
+                    <soan>帮助与反馈</soan>
+                </ion-item>
+            </ion-list>
+        </div>
+
+    </ion-content>
+
+
+
+
+</ion-view>

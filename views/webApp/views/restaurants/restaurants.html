@@ -1,0 +1,22 @@
+<ion-view view-title="附近餐馆">
+    <ion-content>
+        <div class="list card" ng-repeat="restaurant in restaurants">
+            <div class="item">
+                <h2>{{restaurant.name}}</h2>
+                <p>{{restaurant.city}},{{restaurant.address}}</p>
+            </div>
+            <div class="item item-image">
+                <img ng-src="{{restaurant.image_url}}"/>
+            </div>
+        </div>
+
+        <!--无限滚动:如果所有的页面都加载完了(例如，共30页)，则不再出现此组件-->
+        <!--说明：
+                ng-if和ng-show相似，区别在于：ng-if="false"，是元素不存在，撤销了该组件
+            <div ng-show="false"></div>    =>  display:none  元素还是存在的-->
+        <ion-infinite-scroll on-infinite="getRestaurants()"
+                             ng-if="total>page"
+                             immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

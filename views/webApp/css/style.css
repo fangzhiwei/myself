@@ -1,0 +1,52 @@
+
+
+.clear:after{content:"200B";display:block;font-size:0;height:0;clear:both;}
+.clear{*zoom:1;}
+*{margin:0;padding:0;font-family: "Microsoft YaHei"}
+#lunbo img{width:100%}
+/*first页面*/
+#first-view img{width: 100%}
+#first-view{position: relative;}
+#first-view p{height:60px;line-height: 50px;background-color: rgba(0,0,0,.3);position: absolute;
+    right:0;top:60%;color:#fff;min-width: 300px;border-top-left-radius: 30px;border-bottom-left-radius: 30px;font-size:25px}
+/*.sanjiao{width:0;  height:0;  border-top:60px solid transparent;  border-bottom: 60px solid transparent;*/
+    /*border-left: 60px solid green;position: absolute;right: 50%;top:50%;}*/
+#first-view{position: relative;}
+#first-view .enter{width:100px;  height:60px;border-radius: 10px;position: absolute;
+    left:40%;top:80%;background-color:rgba(0,0,0,.3);color:#fff;text-align: center;line-height: 60px;}
+
+/*路线页*/
+#liebiao img{width:100%;height:100%;max-width:80px;max-height:60px;}
+.item-thumbnail-left, .item-thumbnail-left .item-content{min-height:85px;}
+
+#liebiao h2{font-size:18px;font-weight: bolder;}
+#road{position: fixed;}
+#tanchuang{width:150px;position:absolute;right:10px;top:10px;}
+#road #tanchuang .meiyixiang{min-height:46px;padding-left: 10px;}
+
+/*个人页*/
+#myself img{width:100%;height:100%;max-width:80px;max-height:60px;}
+#detail img{width:100%}
+#touxiang{text-align: center;margin-top:10px;}
+#touxiang img{width: 100%;  height:100%;border-radius: 50%;;max-width:80px;max-height:80px;}
+/*介绍页*/
+#intro img{width: 95%}
+/*退出账号字体红色*/
+#tuichu{color:red}
+/*天气页*/
+#weather span{color:red;font-weight: bolder;}
+.star img{height:100%;width:100%;}
+.star{position: relative}
+.star p{position: absolute;left:0;bottom: -2%;width:100%;background: rgba(0,0,0,0.3);height:40px;line-height:40px;color:#fff;text-align: center}
+#tabbg{background: #eee !important;}
+#arrow{font-size:26px}
+.arrow{font-size:20px}
+
+/*设置字体图标大小*/
+#first-view .slide-icon{ font-size: 20em;  }
+/*让slide-box满屏*/
+#first-view .slider{  height:100%;  }
+/*让每个切换页的内容居中，以及设置上边距*/
+#first-view .slider-slide{  text-align: center; }
+#h1{text-align: center;}
+#road-area{margin-left:20px;}

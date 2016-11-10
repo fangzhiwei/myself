@@ -1,0 +1,16 @@
+.banner{background: url("../images/1474436012.jpg")  no-repeat left top;height: 40vh;background-size: cover;}
+
+.main{text-align: center;}
+.main .row{padding: 0 5vw;}
+.main h3{line-height: 10vh;}
+.main p{line-height: 26px;}
+.main .line{border-bottom: 1px solid #eee;}
+.main img{width: 100%;}
+
+.bot1{margin-bottom: 8vh;}
+.bot1 p{margin-bottom: 5vh;}
+
+
+
+
+

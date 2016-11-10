@@ -1,0 +1,29 @@
+<ion-view title="天气" >
+    <ion-content id="weather">
+        <div class="list">
+            <div class="item">
+                <p><span>地点：</span>武汉</p>
+            </div>
+            <div class="item">
+                <p><span>即时天气：</span>{{weather.data.forecast[0].type}},{{weather.data.wendu}}度</p>
+            </div>
+            <div class="item">
+                <p><span>最高温度：</span>{{weather.data.forecast[0].high}}</p>
+
+            </div>
+            <div class="item">
+                <p><span>最低温度：</span>{{weather.data.forecast[0].low}}</p>
+
+            </div>
+            <div class="item">
+                <p><span>风力：</span>{{weather.data.forecast[0].fengli}}</p>
+                <p><span>风向：</span>{{weather.data.forecast[0].fengxiang}}</p>
+
+            </div>
+            <div class="item item-text-wrap">
+                <p><span>感冒指数：</span>{{weather.data.ganmao}}</p>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
